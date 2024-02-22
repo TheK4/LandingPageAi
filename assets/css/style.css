@@ -3,6 +3,9 @@
     padding:0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+}
+
+body{
     background-color: #f1f1f1;
 }
 
@@ -17,6 +20,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 2rem 4rem;
+    /* position: fixed; */
 }
 
 .logo{
@@ -58,3 +62,120 @@ header{
 .btn-sign:hover{
     background-color: #222222;
 }
+
+.div-home-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 48rem;
+    width: 116.25rem;
+    background-color: #000000;
+    margin: 0 auto;
+    border-radius: 2.5rem;
+    padding: 0 10rem;
+}
+
+.home-content{
+    background-color: transparent;
+    max-width: 40rem;
+}
+
+h1, h2 , h3, p{
+    color: #f1f1f1;
+    background-color: transparent;
+}
+
+.h1-main{
+    font-size: 3rem;
+    margin-bottom: 1.25rem;
+    line-height: 4rem;
+    font-weight: 500;
+}
+
+.h3-main{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #b8b8b8;
+}
+
+.h2-48{
+    grid-area: h2-48;
+}
+
+.h3-rating{
+    grid-area: h3-rating;
+}
+
+.h2-700k{
+    grid-area: h2-700k;
+}
+
+.h3-active{
+    grid-area: h3-active;
+}
+
+.info-main{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "h2-48 h2-700k"
+    "h3-rating h3-active"
+    ;
+    column-gap: 1.5rem;
+    row-gap: 1rem;
+    background-color: transparent;
+}
+
+.btn1, .btn2{
+    padding: 1.25rem 2.5rem;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all .3s ease 0s;
+    margin: 1.5rem 0 3rem 0;
+}
+
+.btn1{
+    color: #000000;
+    background-color: #f1f1f1;
+}
+
+.btn2{
+    background-color: transparent;
+    border: 2px solid transparent;
+    color: #f1f1f1;
+    transition: all .3s ease 0s;
+    margin-left: 1rem;
+}
+
+.btn1:hover{
+    background-color: #c0c0c0;
+}
+
+.btn2:hover{
+    background-color: transparent;
+    border: 2px solid #f1f1f1;
+    color: #f1f1f1;
+}
+
+.content-img img{
+    border-radius: 2rem;
+    max-width: 700px;
+    max-height: 700px;
+    width: auto;
+    height: auto;
+    position: absolute; 
+}
+
+.img-1{
+position: relative;
+top: 180px;
+right: 300px;
+}
+
+.img-2{
+    position: relative;
+    top: 400px;
+    right: 200px;
+    }
